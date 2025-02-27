@@ -20,6 +20,19 @@
 - HyperOS 车机系统联动
 - 小米生态链设备互联
 
+
+## 平台支持
+
+| 平台 | 状态 | 最低版本要求 |
+|------|------|------------|
+| Android | ✅ 支持 | Android 5.0 (API 21) |
+| iOS | ✅ 支持 | iOS 11.0 |
+| Web | ✅ 支持 | 所有现代浏览器 |
+| Windows | ✅ 支持 | Windows 10 |
+| macOS | ✅ 支持 | macOS 10.15 (Catalina) |
+| Linux | ✅ 支持 | Ubuntu 20.04 LTS |
+| HarmonyOS | ✅ 支持 | HarmonyOS 5.0 |
+
 ## 预览
 
 ![动态效果](https://nutpi-e41b.obs.cn-north-4.myhuaweicloud.com/gif.gif)
@@ -43,8 +56,7 @@
 
 ### IDE 支持
 - Android Studio 2021.1 或更高版本（推荐）
-- Visual Studio Code 最新版本
-- Trae
+- [Trae](https://trae.ai/)
 - IntelliJ IDEA 2021.1 或更高版本
 - DevEco Studio 5.0.0 或更高版本（HarmonyOS 开发）
 
@@ -82,7 +94,7 @@
 
 1. 克隆项目
 ```bash
-git clone git@gitcode.com:nutpi/Flutter-Tesla-App.git
+git clone git@gitcode.com:nutpi/Flutter-xiaomi-su7-App.git
 ```
 
 2. 安装依赖

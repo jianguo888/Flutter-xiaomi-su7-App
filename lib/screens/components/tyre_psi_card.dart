@@ -9,7 +9,7 @@
  */
 
 import 'package:flutter/material.dart';
-import 'package:tesla_animated_app/models/TyrePsi.dart';
+import 'package:xiaomi_su7_animated_app/models/TyrePsi.dart';
 import '../../constanins.dart';
 
 /// 轮胎气压卡片组件
@@ -21,7 +21,7 @@ class TyrePsiCard extends StatelessWidget {
   const TyrePsiCard({
     Key? key,
     required this.isBottomTwoTyre, // 标识是否为后轮
-    required this.tyrePsi,         // 轮胎气压数据模型
+    required this.tyrePsi, // 轮胎气压数据模型
   }) : super(key: key);
 
   /// 用于区分前后轮的标识
@@ -39,7 +39,8 @@ class TyrePsiCard extends StatelessWidget {
       // 根据气压状态设置不同的边框和背景颜色
       decoration: BoxDecoration(
         // 低气压时显示红色背景，否则显示白色半透明背景
-        color: tyrePsi.isLowPressure ? redColor.withOpacity(0.1) : Colors.white10,
+        color:
+            tyrePsi.isLowPressure ? redColor.withOpacity(0.1) : Colors.white10,
         // 低气压时显示红色边框，否则显示主题色边框
         border: Border.all(
             color: tyrePsi.isLowPressure ? redColor : primaryColor, width: 2),
@@ -50,11 +51,12 @@ class TyrePsiCard extends StatelessWidget {
           ? Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                lowPressureText(context),    // 低气压警告文本
+                lowPressureText(context), // 低气压警告文本
                 const Spacer(),
-                psiText(context, psi: tyrePsi.psi.toString()),  // 气压值
+                psiText(context, psi: tyrePsi.psi.toString()), // 气压值
                 const SizedBox(height: defaultPadding),
-                Text(                        // 温度显示
+                Text(
+                  // 温度显示
                   "${tyrePsi.temp}\u2103",
                   style: TextStyle(fontSize: 16),
                 ),
@@ -62,7 +64,7 @@ class TyrePsiCard extends StatelessWidget {
             )
           : Column(
               // ... 前轮布局，与后轮相反
-            ),
+              ),
     );
   }
 

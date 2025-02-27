@@ -11,9 +11,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:tesla_animated_app/constanins.dart';
-import 'package:tesla_animated_app/home_controller.dart';
-import 'package:tesla_animated_app/models/TyrePsi.dart';
+import 'package:xiaomi_su7_animated_app/constanins.dart';
+import 'package:xiaomi_su7_animated_app/home_controller.dart';
+import 'package:xiaomi_su7_animated_app/models/TyrePsi.dart';
 
 import 'components/battery_status.dart';
 import 'components/door_lock.dart';
