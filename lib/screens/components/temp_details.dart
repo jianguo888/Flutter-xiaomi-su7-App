@@ -1,3 +1,13 @@
+/*
+ * Copyright (c) 2024 坚果派
+ * 
+ * 微信公众号：nutpi
+ * 官网：https://www.nutpi.net/
+ * 
+ * 未经授权，禁止任何形式的商业使用
+ * 详细信息请参考项目根目录下的 README.md 文件
+ */
+
 import 'package:flutter/material.dart';
 
 import '../../constanins.dart';
@@ -51,7 +61,7 @@ class TempDetails extends StatelessWidget {
                 icon: Icon(Icons.arrow_drop_up, size: 48),
               ),
               Text(
-                "29" + "\u2103",
+                "29\u2103",  // 使用字符串插值替代 + 连接
                 style: TextStyle(fontSize: 86),
               ),
               IconButton(
@@ -73,8 +83,8 @@ class TempDetails extends StatelessWidget {
                     "Inside".toUpperCase(),
                   ),
                   Text(
-                    "20" + "\u2103",
-                    style: Theme.of(context).textTheme.headline5,
+                    "20\u2103",  // 使用字符串插值替代 + 连接
+                    style: Theme.of(context).textTheme.headlineSmall,  // 更新为 headlineSmall
                   )
                 ],
               ),
@@ -87,10 +97,10 @@ class TempDetails extends StatelessWidget {
                     style: TextStyle(color: Colors.white54),
                   ),
                   Text(
-                    "35" + "\u2103",
+                    "35\u2103",  // 使用字符串插值替代 + 连接
                     style: Theme.of(context)
                         .textTheme
-                        .headline5!
+                        .headlineSmall!  // 更新为 headlineSmall
                         .copyWith(color: Colors.white54),
                   )
                 ],
